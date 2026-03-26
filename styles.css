@@ -121,7 +121,8 @@ h1 {
   letter-spacing: -0.065em;
   text-transform: lowercase;
   max-width: 100%;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  text-wrap: balance;
   text-shadow:
     0 0 22px rgba(255, 241, 233, 0.08),
     0 16px 48px rgba(72, 28, 39, 0.18);
@@ -164,17 +165,18 @@ h1 {
     width: 100%;
     max-width: 100%;
     gap: 0.45rem;
-    padding: 1.25rem 1rem calc(1.25rem + env(safe-area-inset-bottom));
+    padding: 1rem 0.9rem calc(1rem + env(safe-area-inset-bottom));
   }
 
   .hero__eyebrow {
-    font-size: clamp(1.5rem, 8vw, 1.9rem);
+    font-size: clamp(1.2rem, 6.8vw, 1.55rem);
     line-height: 1;
   }
 
   h1 {
-    font-size: clamp(2.6rem, 15vw, 4rem);
-    line-height: 0.94;
-    letter-spacing: -0.045em;
+    max-width: 7.2ch;
+    font-size: clamp(2rem, 12vw, 2.85rem);
+    line-height: 0.92;
+    letter-spacing: -0.035em;
   }
 }
